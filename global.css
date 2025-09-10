@@ -245,7 +245,7 @@ nav {
 }
 
 .footer_about img {
-  height: 100px;
+  height: 70px;
   width: auto;
   margin-bottom: 1rem;
 }
@@ -272,6 +272,16 @@ nav {
   font-weight: 600;
   font-family: var(--font-primary);
   opacity: 0.8;
+}
+
+.footer_contact p {
+  margin: 5px 0;
+}
+
+.footer_contact .footer_row {
+  display: flex;
+  justify-content: center; /* centers horizontally */
+  gap: 20px; /* space between phone and email */
 }
 
 .footer_phone i,
