@@ -425,6 +425,9 @@
   gap: 5rem;
   margin: 0 auto;
   text-align: left;
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 2rem 1rem;
 }
 
 .offer_text {
