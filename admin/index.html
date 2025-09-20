@@ -5,7 +5,7 @@
   <title>Storyline Café CMS</title>
 </head>
 <body>
-  <h1>Admin Login</h1>
+  <h1>Admin</h1>
 
   <!-- Netlify Identity Widget -->
   <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
@@ -14,8 +14,8 @@
     let inviteToken = null;
     if (window.location.hash.includes('invite_token=')) {
       inviteToken = window.location.hash.split('invite_token=')[1];
-      // Remove token from hash so CMS won't override it
-      history.replaceState(null, null, window.location.pathname + '/admin');
+      // Remove only the hash, keep current path
+      history.replaceState(null, null, window.location.pathname);
     }
 
     function initIdentity() {
