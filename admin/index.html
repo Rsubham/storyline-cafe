@@ -10,27 +10,31 @@
   </style>
 </head>
 <body>
-  <h1>Storyline Café CMS Login</h1>
+  <h1>Storyline Café Admin Login</h1>
 
   <!-- Netlify Identity Widget -->
   <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   <script>
-    // Initialize Identity
-    const identity = netlifyIdentity.init();
-
-    // Wait until page fully loads to handle invite token
     window.addEventListener('load', () => {
-      const hash = window.location.hash;
-      if (hash.includes('invite_token=')) {
-        // Open the "Set Password" form
+      // Make sure the widget is loaded
+      if (typeof netlifyIdentity === 'undefined') {
+        console.error('Netlify Identity widget not loaded.');
+        return;
+      }
+
+      // Initialize Netlify Identity
+      const identity = netlifyIdentity.init();
+
+      // Open "Set Password" form automatically if invite_token exists
+      if (window.location.hash.includes('invite_token=')) {
         identity.open('invite');
       }
-    });
 
-    // Optional: debug events
-    identity.on('init', user => console.log('Identity initialized', user));
-    identity.on('login', user => console.log('Logged in', user));
-    identity.on('logout', () => console.log('Logged out'));
+      // Optional: debug events
+      identity.on('init', user => console.log('Identity initialized', user));
+      identity.on('login', user => console.log('Logged in', user));
+      identity.on('logout', () => console.log('Logged out'));
+    });
   </script>
 
   <!-- Netlify CMS -->
