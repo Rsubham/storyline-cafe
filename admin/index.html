@@ -3,34 +3,36 @@
 <head>
   <meta charset="UTF-8">
   <title>Storyline Café CMS</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-  <h1>CMS Login</h1>
+  <h1>Admin Login</h1>
 
   <!-- Netlify Identity Widget -->
   <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   <script>
-    // Wait until the script is fully loaded
+    // Save the invite token if it exists
+    let inviteToken = null;
+    if (window.location.hash.includes('invite_token=')) {
+      inviteToken = window.location.hash.split('invite_token=')[1];
+      // Remove token from hash so CMS won't override it
+      history.replaceState(null, null, window.location.pathname + '/admin');
+    }
+
     function initIdentity() {
       if (typeof netlifyIdentity === 'undefined') {
-        console.error('Netlify Identity not loaded yet. Retrying...');
-        setTimeout(initIdentity, 100); // try again after 100ms
+        setTimeout(initIdentity, 100); // wait until widget loads
         return;
       }
 
       const identity = netlifyIdentity.init();
 
-      // Only attach events if identity initialized
-      if (identity) {
-        identity.on('init', user => console.log('Identity initialized', user));
-        identity.on('login', user => console.log('Logged in', user));
-        identity.on('logout', () => console.log('Logged out'));
+      identity.on('init', user => console.log('Identity initialized', user));
+      identity.on('login', user => console.log('Logged in', user));
+      identity.on('logout', () => console.log('Logged out'));
 
-        // Automatically open invite form if invite_token exists
-        if (window.location.hash.includes('invite_token=')) {
-          identity.open('invite');
-        }
+      // Open invite form if token exists
+      if (inviteToken) {
+        identity.open('invite');
       }
     }
 
