@@ -3,21 +3,34 @@
 <head>
   <meta charset="UTF-8">
   <title>Storyline Café CMS</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body { font-family: system-ui, sans-serif; margin: 20px; }
+    h1 { font-size: 24px; margin-bottom: 20px; }
+  </style>
 </head>
 <body>
-  <h1>CMS Login</h1>
+  <h1>Storyline Café CMS Login</h1>
 
   <!-- Netlify Identity Widget -->
   <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   <script>
-    // Initialize Netlify Identity
+    // Initialize Identity
     const identity = netlifyIdentity.init();
 
-    // If there is an invite token in URL, open the invite form automatically
-    const token = window.location.hash.split('invite_token=')[1];
-    if(token) {
-      identity.open('invite');
-    }
+    // Wait until page fully loads to handle invite token
+    window.addEventListener('load', () => {
+      const hash = window.location.hash;
+      if (hash.includes('invite_token=')) {
+        // Open the "Set Password" form
+        identity.open('invite');
+      }
+    });
+
+    // Optional: debug events
+    identity.on('init', user => console.log('Identity initialized', user));
+    identity.on('login', user => console.log('Logged in', user));
+    identity.on('logout', () => console.log('Logged out'));
   </script>
 
   <!-- Netlify CMS -->
