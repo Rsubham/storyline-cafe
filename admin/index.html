@@ -3,13 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Storyline Café Admin</title>
+  <title>Storyline Café aTEST</title>
 </head>
 <body>
+  <h1 style="text-align:center; margin-top:50px;">Loading CMS...</h1>
+
   <!-- Netlify CMS -->
   <script src="https://unpkg.com/netlify-cms-app@^2.0.0/dist/netlify-cms.js"></script>
 
-  <!-- Netlify Identity Widget -->
+  <!-- Netlify Identity -->
   <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   <script>
     if (window.netlifyIdentity) {
@@ -24,6 +26,12 @@
       window.netlifyIdentity.on('logout', () => {
         document.location.href = '/';
       });
+
+      // Auto-trigger login if invite token exists
+      const hash = window.location.hash;
+      if (hash.startsWith('#invite_token=')) {
+        window.netlifyIdentity.open('login');
+      }
     }
   </script>
 </body>
