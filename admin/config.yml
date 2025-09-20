@@ -1,0 +1,19 @@
+backend:
+  name: git-gateway
+  branch: main   # or master (match your Git repo default branch)
+
+media_folder: "images/uploads"      # where uploaded images go in repo
+public_folder: "/images/uploads"    # how images are referenced in site
+
+collections:
+  - name: "gallery"
+    label: "Gallery"
+    folder: "gallery"               # create this folder in repo
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Type", name: "type", widget: "select", options: ["bdy celeb", "prewedding", "other"]}
+      - {label: "Event Date", name: "event_date", widget: "datetime"}
+      - {label: "Upload Date", name: "upload_date", widget: "datetime", default: "" }
+      - {label: "Image", name: "image", widget: "image"}
