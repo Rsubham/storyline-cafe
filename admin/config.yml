@@ -1,6 +1,6 @@
 backend:
   name: git-gateway
-  branch: main   # or master (match your Git repo default branch)
+  branch: master   # or master (match your Git repo default branch)
 
 media_folder: "images/uploads"      # where uploaded images go in repo
 public_folder: "/images/uploads"    # how images are referenced in site
