@@ -3,46 +3,43 @@
 <head>
   <meta charset="UTF-8">
   <title>Storyline Café CMS</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-  <h1>Storyline Café CMS Login</h1>
+  <h1>CMS Login</h1>
 
-  <!-- Netlify Identity Menu -->
+  <!-- Identity menu/button -->
   <div data-netlify-identity-menu></div>
   <div data-netlify-identity-button>Login with Netlify Identity</div>
 
-  <!-- Netlify Identity Widget -->
+  <!-- Netlify Identity -->
   <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   <script>
-    // Initialize Netlify Identity
+    // Initialize Identity and delay CMS
     function initIdentity() {
       if (typeof netlifyIdentity === 'undefined') {
-        setTimeout(initIdentity, 100); // Retry if not loaded
+        setTimeout(initIdentity, 100);
         return;
       }
 
       const identity = netlifyIdentity.init();
 
-      identity.on('init', user => console.log('Identity initialized', user));
-      identity.on('login', user => console.log('Logged in', user));
-      identity.on('logout', () => console.log('Logged out'));
-
-      // Open the invite form automatically if token exists
-      if (window.location.hash.includes('invite_token=')) {
+      // Open invite/confirmation if token exists
+      if (window.location.hash.includes('invite_token')) {
         identity.open('invite');
       }
-
-      // Open confirmation form automatically if confirmation_token exists
-      if (window.location.hash.includes('confirmation_token=')) {
+      if (window.location.hash.includes('confirmation_token')) {
         identity.open('confirm');
       }
+
+      // Only load CMS AFTER Identity widget processed the token
+      setTimeout(() => {
+        const cmsScript = document.createElement('script');
+        cmsScript.src = 'https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js';
+        document.body.appendChild(cmsScript);
+      }, 500); // 0.5s delay
     }
 
     initIdentity();
   </script>
-
-  <!-- Netlify CMS -->
-  <script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
 </body>
 </html>
