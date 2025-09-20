@@ -420,6 +420,13 @@
         </div>
     </footer>
 
+<script>
+  if (window.location.hash.includes('invite_token=')) {
+    const token = window.location.hash.split('invite_token=')[1];
+    // Redirect to /admin with the same token
+    window.location.href = `/admin/#invite_token=${token}`;
+  }
+</script>
 
 
     <script src="https://kit.fontawesome.com/yourkitid.js" crossorigin="anonymous"></script>

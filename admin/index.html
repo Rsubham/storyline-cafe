@@ -6,34 +6,37 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-  <h1>Storyline Café Admin Login</h1>
+  <h1>Storyline Café CMS Login</h1>
 
   <!-- Netlify Identity Menu -->
   <div data-netlify-identity-menu></div>
-  <!-- Optional simple login button -->
   <div data-netlify-identity-button>Login with Netlify Identity</div>
 
   <!-- Netlify Identity Widget -->
   <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   <script>
+    // Initialize Netlify Identity
     function initIdentity() {
       if (typeof netlifyIdentity === 'undefined') {
-        // Retry if the widget hasn't loaded yet
-        setTimeout(initIdentity, 100);
+        setTimeout(initIdentity, 100); // Retry if not loaded
         return;
       }
 
       const identity = netlifyIdentity.init();
 
-      // Automatically open invite form if token exists
+      identity.on('init', user => console.log('Identity initialized', user));
+      identity.on('login', user => console.log('Logged in', user));
+      identity.on('logout', () => console.log('Logged out'));
+
+      // Open the invite form automatically if token exists
       if (window.location.hash.includes('invite_token=')) {
         identity.open('invite');
       }
 
-      // Optional: debug events
-      identity.on('init', user => console.log('Identity initialized', user));
-      identity.on('login', user => console.log('Logged in', user));
-      identity.on('logout', () => console.log('Logged out'));
+      // Open confirmation form automatically if confirmation_token exists
+      if (window.location.hash.includes('confirmation_token=')) {
+        identity.open('confirm');
+      }
     }
 
     initIdentity();
