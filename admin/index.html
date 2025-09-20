@@ -3,27 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Storyline Café Admin</title>
+  <title>Storyline Café Admin Test</title>
 </head>
 <body>
-  <!-- Netlify CMS App -->
   <script src="https://unpkg.com/netlify-cms-app@^2.0.0/dist/netlify-cms.js"></script>
-
-  <!-- Netlify Identity Widget -->
   <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   <script>
-    // Initialize Netlify Identity
     if (window.netlifyIdentity) {
-      window.netlifyIdentity.init();
-
-      // When user logs in, redirect to /admin/
-      window.netlifyIdentity.on('login', user => {
-        document.location.href = '/admin/';
+      window.netlifyIdentity.init({ locale: 'en' });
+      window.netlifyIdentity.on('init', user => {
+        if (!user) console.log('Netlify Identity initialized, no user logged in');
       });
-
-      // Optional: logout redirect
-      window.netlifyIdentity.on('logout', () => {
-        document.location.href = '/';
+      window.netlifyIdentity.on('login', () => {
+        document.location.href = '/admin/';
       });
     }
   </script>
