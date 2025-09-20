@@ -1,19 +1,27 @@
 backend:
   name: git-gateway
-  branch: master   # change to 'master' if your repo uses master
+  branch: master
 
-media_folder: "images/uploads"     
-public_folder: "/images/uploads"
+media_folder: "Assets/Gallery"   # where uploaded images go
+public_folder: "/Assets/Gallery" # URL path for images on the site
 
 collections:
   - name: "gallery"
     label: "Gallery"
-    folder: "gallery"               
-    create: true
-    slug: "{{slug}}"
-    fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Type", name: "type", widget: "select", options: ["bdy celeb", "prewedding", "other"] }
-      - { label: "Event Date", name: "event_date", widget: "datetime" }
-      - { label: "Upload Date", name: "upload_date", widget: "datetime", default: "" }
-      - { label: "Image", name: "image", widget: "image" }
+    files:
+      - label: "Gallery Data"
+        name: "gallery_data"
+        file: "Assets/Gallery/gallery.json"   # JSON file in same folder as images
+        fields:
+          - label: "Items"
+            name: "items"
+            widget: list
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Category", name: "category", widget: "select", options: ["Birthday", "Celebrity", "PreWedding", "Other"] }
+              - { label: "Event Date", name: "event_date", widget: "date", format: "YYYY-MM-DD" }
+              - { label: "Upload Date", name: "upload_date", widget: "date", format: "YYYY-MM-DD" }
+              - { label: "Image", name: "image", widget: "image" }
+              - { label: "Notes", name: "notes", widget: "text", required: false }
+
+publish_mode: editorial_workflow
