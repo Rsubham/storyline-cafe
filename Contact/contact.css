@@ -1,0 +1,242 @@
+/* contact hero */
+.contact_hero {
+  position: relative;
+  background: url("/Assets/Hero/1.jpg") center/cover no-repeat;
+  height: max-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-block: 2rem;
+}
+.contact_hero_overlay {
+  position: absolute;
+  inset: 0;
+  background: black;
+  opacity: .75;
+}
+.contact_hero_content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  width: var(--max-width);
+  padding-bottom: 0;
+  padding-top: 5rem;
+  padding-left: 1rem;
+}
+
+.contact_hero_content p,
+.contact_hero_content h1 {
+  color: var(--white);
+}
+
+.contact_hero_content p {
+  font-size: 1.5rem;
+  font-weight: 500;
+  font-family: var(--font-primary);
+}
+
+.contact_hero_content h1 {
+  font-size: 4rem;
+  font-weight: 500;
+}
+
+/* Contact Section */
+.contact-section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-container {
+  display: grid;
+  gap: 5rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+/* Left Side */
+.contact-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.info-items {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  font-family: var(--font-primary);
+}
+
+.info-item i {
+  font-size: 15px;
+  margin-right: 15px;
+  background: #eee;
+  padding: 15px;
+  border-radius: 100%;
+}
+
+.info-item span {
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.social-icons {
+  display: flex;
+  gap: 3rem;
+  margin-top: 25px;
+}
+
+.social-icons a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  text-align: center;
+  line-height: 40px;
+  background: #f3f0ec;
+  border-radius: 50%;
+  font-size: 18px;
+  color: var(--text-dark);
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  background: var(--primary);
+  color: var(--white);
+}
+
+/* Right Side */
+.contact-form {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact-form h2 {
+  font-family: var(--font-secondary);
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.form-row {
+  display: flex;
+  gap: 2rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  font-family: var(--font-primary);
+}
+
+/* cta section */
+.contact_cta {
+  position: relative;
+  background: url("/Assets/Hero/1.jpg") center/cover no-repeat;
+  height: max-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.contact_cta_overlay {
+  position: absolute;
+  inset: 0;
+  background: black;
+  opacity: 0.7;
+}
+
+.contact_cta_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
+  padding-block: 3rem;
+}
+
+.contact_cta_container h2 {
+  font-size: 2rem;
+  color: var(--white);
+  text-align: center;
+}
+
+.contact_cta_container p {
+  margin-bottom: 1.5rem;
+  color: var(--white);
+  text-align: center;
+}
+
+.cta_buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.cta_buttons .btn:hover {
+  color: var(--white);
+}
+
+/* Responsive */
+@media (max-width: 1100px) {
+  .contact-section {
+    min-height: 0;
+  }
+}
+
+@media (max-width: 768px) {
+    .contact_hero {
+    padding-block: 0.5rem;
+  }
+
+  .contact_hero_content {
+    padding-top: 5rem;
+    padding-left: 0;
+  }
+
+  .contact_hero_content p {
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: var(--font-primary);
+    text-align: center;
+  }
+
+  .contact_hero_content h1 {
+    font-size: 3rem;
+    font-weight: 500;
+    text-align: center;
+  }
+  .contact-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .info-items {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+}

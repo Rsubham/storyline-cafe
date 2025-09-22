@@ -1,0 +1,30 @@
+{
+  "Birthday": [
+    {
+      "file": "1.jpg",
+      "eventDate": "2025-09-01",
+      "uploadDate": "2025-09-15",
+      "name": "Alice's 21st"
+    },
+    {
+      "file": "2.jpg",
+      "eventDate": "2025-09-01",
+      "uploadDate": "2025-09-15",
+      "name": "Cake cutting"
+    },
+    {
+      "file": "3.jpg",
+      "eventDate": "2025-08-10",
+      "uploadDate": "2025-08-12",
+      "name": "Poolside fun"
+    }
+  ],
+  "Party": [
+    {
+      "file": "3.jpg",
+      "eventDate": "2025-08-10",
+      "uploadDate": "2025-08-12",
+      "name": "Poolside fun"
+    }
+  ]
+}
