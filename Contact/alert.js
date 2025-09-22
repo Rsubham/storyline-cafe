@@ -3,13 +3,13 @@ const popup = document.getElementById('popup');
 const closeBtn = document.getElementById('close-popup');
 
 form.addEventListener('submit', function(e) {
-    e.preventDefault(); // Stop normal redirect
+    e.preventDefault(); 
 
     fetch(form.action, {
         method: 'POST',
         body: new FormData(form),
     }).then(() => {
-        popup.classList.add('active'); // Show popup
+        popup.classList.add('active'); 
         form.reset();
     }).catch(() => alert('⚠️ Something went wrong. Please try again.'));
 });

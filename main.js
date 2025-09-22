@@ -27,5 +27,3 @@ document.addEventListener("click", (e) => {
     icon.classList.add("fa-bars");
   }
 });
-
-

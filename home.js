@@ -314,4 +314,4 @@ document.querySelectorAll(".room_card").forEach((card) => {
 });
 
 
-//gallery container
+

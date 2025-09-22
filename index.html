@@ -4,19 +4,70 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+
     <title>Storyline Café — Dine, Stay & Celebrate</title>
     <meta name="description"
-        content="A cozy neighborhood café where coffee meets stories. Fresh brews, baked goods, book nooks, and community events." />
+        content="Storyline Café offers seaside dining, premium stays, weddings, pool parties, and unforgettable moments by the sea.">
+
     <link rel="icon" href="/Assets/Icon/Logo.ico" />
+    <meta name="theme-color" content="#e21b1b">
+    <link rel="canonical" href="https://www.storylinecafe.in/">
+
+    <meta property="og:title" content="Storyline Café — Dine, Stay & Celebrate">
+    <meta property="og:description"
+        content="Storyline Café offers seaside dining, premium stays, weddings, pool parties, and unforgettable moments by the sea.">
+    <meta property="og:image" content="https://www.storylinecafe.in/Assets/About/1.jpg">
+    <meta property="og:url" content="https://www.storylinecafe.in/">
+    <meta property="og:type" content="website">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Storyline Café — Dine, Stay & Celebrate">
+    <meta name="twitter:description"
+        content="Storyline Café offers seaside dining, premium stays, weddings, pool parties, and unforgettable moments by the sea.">
+    <meta name="twitter:image" content="https://www.storylinecafe.in/Assets/About/1.jpg">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,300..700;1,300..700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
     <link rel="stylesheet" href="global.css">
     <link rel="stylesheet" href="home.css">
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "HospitalityBusiness",
+        "name": "Storyline Café",
+        "image": "https://www.storylinecafe.in/Assets/Logo/Logotp.png",
+        "logo": "https://www.storylinecafe.in/Assets/Logo/Logotp.png",
+        "telephone": "+91-7008808423",
+        "priceRange": "₹₹",
+        "servesCuisine": [
+            "Cafe",
+            "Indian",
+            "Continental",
+            "Seafood",
+            "Beverages"
+        ],
+        "url": "https://www.storylinecafe.in",
+        "menu": "https://www.storylinecafe.in/menu",
+        "acceptsReservations": true,
+        "openingHours": [
+            "Mo-Su 10:00-22:00"
+        ],
+        "sameAs": [
+            "https://www.instagram.com/storylinecafe/",
+            "https://www.instagram.com/storyline_cafe/",
+            "https://www.facebook.com/CreateYourOwnStorieeees/"
+        ]
+    }
+    </script>
 </head>
+
+
 
 <body>
     <nav>
@@ -38,7 +89,7 @@
             <li><a href="./Memories">Memories</a></li>
             <li><a href="./Contact">Contact</a></li>
         </ul>
-        <button class="btn nav_btn">Reservation</button>
+        <button class="btn nav_btn" onclick="window.location.href='/Reservation/'">Reservation</button>
     </nav>
 
     <header class="header">
@@ -50,7 +101,7 @@
         <div class="section_container header_container" id="home">
             <p>Dine - Stay - Celebrate</p>
             <h1>Where Every Visit Becomes <br />a Cherished <span>Story</span>.</h1>
-            <button class="btn header_btn">Reservation</button>
+            <button class="btn header_btn" onclick="window.location.href='/Reservation/'">Reservation</button>
         </div>
     </header>
 
@@ -79,7 +130,7 @@
                     celebrate life’s most cherished moments in style.”
                 </p>
                 <div class="story_btn">
-                    <button class="btn">Read More</button>
+                    <button class="btn" onclick="window.location.href='/About/'">Read More</button>
                 </div>
             </div>
         </div>
@@ -147,8 +198,8 @@
             </div>
 
             <div class="dine_btn">
-                <button class="btn view">View The Menu</button>
-                <button class="btn reserve">Reserve A Table</button>
+                <button class="btn view" onclick="window.location.href='/Menu/'">View The Menu</button>
+                <button class="btn reserve" onclick="window.location.href='/Reservation/'">Reserve A Table</button>
             </div>
         </div>
     </section>
@@ -217,7 +268,7 @@
                 </div>
             </div>
             <div class="room_btn">
-                <button class="btn">Reserve A Stay</button>
+                <button class="btn" onclick="window.location.href='/Reservation/'">Reserve A Stay</button>
             </div>
         </div>
     </section>
@@ -254,7 +305,7 @@
 
             </div>
             <div class="event_btn">
-                <button class="btn">Book An Event</button>
+                <button class="btn" onclick="window.location.href='/Reservation/'">Book An Event</button>
             </div>
         </div>
     </section>
@@ -331,7 +382,7 @@
             </div>
 
             <div class="memory_btn">
-                <button class="btn">Explore Gallery</button>
+                <button class="btn" onclick="window.location.href='/Gallery/'">Explore Gallery</button>
             </div>
 
         </div>
@@ -396,10 +447,12 @@
                 <div class="footer_socials">
                     <a href="https://www.instagram.com/storyline_cafe/" target="_blank"><i
                             class="fab fa-instagram"></i></a>
-                    <a href="#" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://www.instagram.com/storylinecafe/" target="_blank"><i
+                            class="fab fa-instagram"></i></a>
+                    <!-- <a href="#" target="_blank"><i class="fa-brands fa-x-twitter"></i></a> -->
                     <a href="https://www.facebook.com/CreateYourOwnStorieeees/" target="_blank"><i
                             class="fab fa-facebook-f"></i></a>
-                    <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+                    <!-- <a href="#" target="_blank"><i class="fab fa-youtube"></i></a> -->
                 </div>
             </div>
 
