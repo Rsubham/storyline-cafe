@@ -84,10 +84,11 @@
 }
 
 .story_image img {
-  max-width: 450px;
+  max-width: 500px;
   margin: auto;
   border-radius: 5px;
 }
+
 
 .story_content h2 {
   font-family: var(--font-secondary);
