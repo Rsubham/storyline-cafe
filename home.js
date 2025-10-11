@@ -273,45 +273,6 @@ document.querySelectorAll(".dine_card").forEach((card) => {
   showSlide(index);
 });
 
-// Room section
-document.querySelectorAll(".room_card").forEach((card) => {
-  const slides = card.querySelector(".room_slides");
-  const prev = card.querySelector(".room_prev");
-  const next = card.querySelector(".room_next");
-  const total = slides.children.length;
-  let index = 0;
-  let interval;
-
-  function showSlide(i) {
-    index = (i + total) % total; // loop
-    slides.style.transform = `translateX(-${index * 100}%)`;
-  }
-
-  function startAuto() {
-    interval = setInterval(() => {
-      showSlide(index + 1);
-    }, 5000);
-  }
-
-  function stopAuto() {
-    clearInterval(interval);
-  }
-
-  prev.addEventListener("click", () => {
-    stopAuto();
-    showSlide(index - 1);
-    startAuto();
-  });
-
-  next.addEventListener("click", () => {
-    stopAuto();
-    showSlide(index + 1);
-    startAuto();
-  });
-
-  // Start autoplay
-  startAuto();
-});
 
 
 

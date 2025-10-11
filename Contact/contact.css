@@ -150,56 +150,6 @@
   font-family: var(--font-primary);
 }
 
-/* cta section */
-.contact_cta {
-  position: relative;
-  background: url("/Assets/Hero/1.jpg") center/cover no-repeat;
-  height: max-content;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-
-.contact_cta_overlay {
-  position: absolute;
-  inset: 0;
-  background: black;
-  opacity: 0.7;
-}
-
-.contact_cta_container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  z-index: 2;
-  padding-block: 3rem;
-}
-
-.contact_cta_container h2 {
-  font-size: 2rem;
-  color: var(--white);
-  text-align: center;
-}
-
-.contact_cta_container p {
-  margin-bottom: 1.5rem;
-  color: var(--white);
-  text-align: center;
-}
-
-.cta_buttons {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
-}
-
-.cta_buttons .btn:hover {
-  color: var(--white);
-}
 
 /* Responsive */
 @media (max-width: 1100px) {

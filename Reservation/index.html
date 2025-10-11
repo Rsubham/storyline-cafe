@@ -1,0 +1,506 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Reserve Your Experience at Storyline Café — Dine, Stay & Celebrate</title>
+  <meta name="description"
+    content="Reserve your table, room, or event at Storyline Café — enjoy seaside dining, premium stays, weddings, and pool parties in Gopalpur.">
+
+  <link rel="icon" href="/Assets/Icon/Logo.ico" />
+  <meta name="theme-color" content="#e21b1b">
+  <link rel="canonical" href="https://www.storylinecafe.in/reservation">
+
+  <meta property="og:title" content="Reserve Your Experience at Storyline Café — Dine, Stay & Celebrate">
+  <meta property="og:description"
+    content="Reserve your table, room, or event at Storyline Café — enjoy seaside dining, premium stays, weddings, and pool parties in Gopalpur.">
+  <meta property="og:image" content="https://www.storylinecafe.in/Assets/About/1.jpg">
+  <meta property="og:url" content="https://www.storylinecafe.in/reservation">
+  <meta property="og:type" content="website">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Reserve Your Experience at Storyline Café — Dine, Stay & Celebrate">
+  <meta name="twitter:description"
+    content="Reserve your table, room, or event at Storyline Café — enjoy seaside dining, premium stays, weddings, and pool parties in Gopalpur.">
+  <meta name="twitter:image" content="https://www.storylinecafe.in/Assets/Reservation/hero.jpg">
+
+  <meta name="twitter:image" content="https://www.storylinecafe.in/Assets/About/1.jpg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,300..700;1,300..700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+  <link rel="stylesheet" href="../global.css">
+  <link rel="stylesheet" href="/Reservation/reservation.css">
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HospitalityBusiness",
+  "name": "Storyline Café",
+  "url": "https://www.storylinecafe.in/reservation",
+  "logo": "https://www.storylinecafe.in/Assets/Logo/Logotp.png",
+  "sameAs": [
+    "https://www.instagram.com/storylinecafe/",
+    "https://www.instagram.com/storyline_cafe/",
+    "https://www.facebook.com/CreateYourOwnStorieeees/"
+  ],
+  "description": "Reserve your table, room, or event at Storyline Café — enjoy seaside dining, premium stays, weddings, and pool parties in Gopalpur."
+}
+</script>
+
+</head>
+
+<body>
+  <nav>
+    <div class="nav_bar">
+      <div class="logo">
+        <a href="/"><img src="/Assets/Logo/Logo.png" alt="logo" /></a>
+      </div>
+      <div class="nav_menu_btn" id="menu-btn">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </div>
+    <ul class="nav_links" id="nav-links">
+      <li><a href="/">Home</a></li>
+      <li><a href="/About">About</a></li>
+      <li><a href="/Menu">Menu</a></li>
+      <li class="reservation_dropdown">
+        <a href="/Reservation" class="nav_link_active">Reservation</a>
+        <ul class="dropdown_menu">
+          <li><a href="/Reservation#Table">Table</a></li>
+          <li><a href="/Reservation#Stay">Stay</a></li>
+          <li><a href="/Reservation#Event">Event</a></li>
+        </ul>
+      </li>
+      <li class="reservation_nodropdown"><a href="/Reservation">Reservation</a></li>
+      <li><a href="/Gallery">Gallery</a></li>
+      <li><a href="/Outlets">Outlets</a></li>
+      <li><a href="/Memories">Memories</a></li>
+      <li><a href="/Contact">Contact</a></li>
+    </ul>
+    <button class="btn nav_btn" onclick="window.location.href='/Reservation/'">Reservation</button>
+  </nav>
+
+
+  <section class="reservation_hero section">
+    <div class="reservation_hero_overlay"></div>
+    <div class="reservation_hero_content section_container">
+      <p class="section_header">Every Great Story Deserves a Perfect Beginning.</p>
+      <h1 class="section_header">Reserve Now</h1>
+    </div>
+  </section>
+
+  <div id="popup" class="popup-overlay">
+    <div class="popup-content">
+      <h2 class="section_subheader">Reservation Received!</h2>
+      <p class="section_header"></p>
+      <button class="btn" id="close-popup">Done</button>
+    </div>
+  </div>
+
+  <section class="table_reserv section" id="Table">
+    <div class="table_reserv_container section_container">
+      <div>
+        <p class="section_subheader p">RESERVE YOUR TABLE</p>
+        <h2 class="section_header h2">"Where every bite tells a story, save your seat today."</h2>
+
+      </div>
+
+      <div class="table_reserv_content">
+        <div class="table_reserv_assets"></div>
+
+        <div class="reserv_form table_form">
+          <form action="https://formsubmit.co/rsubhamprojects@gmail.com" method="POST" id="table_form"
+            class="reserv_form">
+            <input type="hidden" name="_subject" value="New Table Reservation – Storyline Café">
+            <input type="hidden" name="_captcha" value="false">
+
+            <div class="form-row">
+              <div class="form-field">
+                <input type="text" name="Full Name" id="Name" placeholder="Full Name" required>
+              </div>
+              <div class="form-field">
+                <input type="tel" name="Phone Number" id="Phone" placeholder="Phone Number" required>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-field">
+                <label for="Date">Reservation Date</label>
+                <input type="date" name="Reservation Date" id="Date" required>
+              </div>
+              <div class="form-field">
+                <label for="Time">Reservation Time</label>
+                <input type="time" name="Reservation Time" id="Time" required>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-field">
+                <input type="number" name="Number of Guests" id="Guests" min="1" max="20" placeholder="Number of Guests"
+                  required>
+              </div>
+              <div class="form-field">
+                <select name="Outlet" id="Outlet" required>
+                  <option value="">Select Outlet</option>
+                  <option value="Gopalpur On Sea">Gopalpur On Sea</option>
+                  <option value="Brahmapur">Brahmapur</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-field full-width">
+                <textarea name="Special Requests / Notes" id="Notes"
+                  placeholder="Dietary restrictions or seating preferences..." rows="4"></textarea>
+              </div>
+            </div>
+
+            <button type="submit" class="btn">Reserve Table</button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="room_reserv section" id="Stay">
+    <div class="room_reserv_container section_container">
+      <div>
+        <p class="section_subheader p">BOOK YOUR STAY</p>
+        <h2 class="section_header h2">"Step into comfort, luxury, and moments that feel like home."</h2>
+      </div>
+
+      <div class="room_reserv_content">
+        <div class="reserv_form room_form">
+          <form action="https://formsubmit.co/rsubhamprojects@gmail.com" method="POST" id="room_form"
+            class="reserv_form">
+            <input type="hidden" name="_subject" value="New Room Reservation – Storyline Café">
+            <input type="hidden" name="_captcha" value="false">
+
+            <div class="form-row">
+              <div class="form-field">
+                <input type="text" name="Full Name" id="Name" placeholder="Full Name" required>
+              </div>
+              <div class="form-field">
+                <input type="tel" name="Phone Number" id="Phone" placeholder="Phone Number" required>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-field">
+                <label for="CheckIn">Check-in Date</label>
+                <input type="date" name="Check-in Date" id="CheckIn" required>
+              </div>
+              <div class="form-field">
+                <label for="CheckOut">Check-out Date</label>
+                <input type="date" name="Check-out Date" id="CheckOut" required>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-field">
+                <input type="number" name="Adults" id="Adults" min="1" max="10" placeholder="Number of Adults" required>
+              </div>
+              <div class="form-field">
+                <input type="number" name="Children" id="Children" min="0" max="10" placeholder="Number of Children">
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-field">
+                <select name="Room Type" id="RoomType" required>
+                  <option value="">Select Room Type</option>
+                  <option value="Single">Single</option>
+                  <option value="Double">Double</option>
+                  <option value="Suite">Suite</option>
+                </select>
+              </div>
+
+              <div class="form-field">
+                <select name="Outlet" id="Outlet" required>
+                  <option value="" disabled>Select Outlet</option>
+                  <option value="Gopalpur On Sea" selected>Gopalpur On Sea</option>
+                  <option value="Brahmapur" disabled>Brahmapur</option>
+                </select>
+              </div>
+
+            </div>
+
+            <div class="form-row">
+              <div class="form-field full-width">
+                <textarea name="Special Requests / Notes" id="Notes"
+                  placeholder="Bed preference, accessibility, or other requests..." rows="4"></textarea>
+              </div>
+            </div>
+
+            <button type="submit" class="btn">Reserve Stay</button>
+          </form>
+        </div>
+
+        <div class="features_grid">
+
+          <div class="feature_card">
+            <i class="fa-solid fa-bell-concierge"></i>
+            <h3>Reception</h3>
+            <p>Check-in 12 PM <br> Check-out 10 AM <br> Early check-in on request.</p>
+          </div>
+
+          <div class="feature_card">
+            <i class="fa-solid fa-map-location-dot"></i>
+            <h3>Concierge</h3>
+            <p>Available 24×7 to plan trips & local travel assistance.</p>
+          </div>
+
+          <div class="feature_card">
+            <i class="fa-solid fa-broom"></i>
+            <h3>Housekeeping</h3>
+            <p>24×7 room cleaning, laundry by 7 PM if given before 9 AM.</p>
+          </div>
+
+          <div class="feature_card">
+            <i class="fa-solid fa-water-ladder"></i>
+            <h3>Pool</h3>
+            <p>Open daily 7AM – 1PM & 5PM – 10PM.</p>
+          </div>
+
+          <div class="feature_card">
+            <i class="fa-solid fa-utensils"></i>
+            <h3>Room Service</h3>
+            <p>In-room dining 1:30PM – 10PM via reception.</p>
+          </div>
+
+          <div class="feature_card">
+            <i class="fa-solid fa-wifi"></i>
+            <h3>Wi-Fi</h3>
+            <p>Free Wi-Fi across the resort. Ask reception for password.</p>
+          </div>
+
+          <div class="feature_card">
+            <i class="fa-solid fa-car"></i>
+            <h3>Vehicle Rent</h3>
+            <p>Book rides via reception (4 hrs prior notice).</p>
+          </div>
+
+          <div class="feature_card">
+            <i class="fa-solid fa-seedling"></i>
+            <h3>Florist</h3>
+            <p>Flower & décor for occasions on request.</p>
+          </div>
+
+          <div class="feature_card">
+            <i class="fa-solid fa-lock"></i>
+            <h3>Locker</h3>
+            <p>Secure free locker service at reception.</p>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="event_reserv section" id="Event">
+    <div class="event_reserv_container section_container">
+      <div>
+        <p class="section_subheader p">PLAN YOUR EVENT</p>
+        <h2 class="section_header h2">"Celebrate life’s moments in spaces made for memories."</h2>
+      </div>
+
+      <div class="event_reserv_content">
+        <div class="event-showcase">
+          <div class="event-item">
+            <img src="/Assets/Reservation/Event/Bdy.webp" alt="Birthday Party">
+            <span class="event-tag">Birthday</span>
+          </div>
+          <div class="event-item">
+            <img src="/Assets/Reservation/Event/pool.webp" alt="Pool Party">
+            <span class="event-tag">Pool Party</span>
+          </div>
+          <div class="event-item">
+            <img src="/Assets/Reservation/Event/pre_wed.jpg" alt="Pre Wedding">
+            <span class="event-tag">Pre Wedding</span>
+          </div>
+          <div class="event-item">
+            <img src="/Assets/Reservation/Event/mrg.webp" alt="Wedding">
+            <span class="event-tag">Wedding</span>
+          </div>
+          <div class="event-item">
+            <img src="/Assets/Reservation/Event/date.webp" alt="Date Night">
+            <span class="event-tag">Date Night</span>
+          </div>
+          <div class="event-item">
+            <img src="/Assets/Reservation/Event/rain dance.png" alt="Rain Dance">
+            <span class="event-tag">Rain Dance</span>
+          </div>
+          <div class="event-item">
+            <img src="/Assets/Reservation/Event/camping.png" alt="Camping">
+            <span class="event-tag">Camping</span>
+          </div>
+          <div class="event-item">
+            <img src="/Assets/Reservation/Event/bonfire.png" alt="Bonfire">
+            <span class="event-tag">Bonfire</span>
+          </div>
+          <div class="event-item">
+            <img src="/Assets/Reservation/Event/dj.png" alt="Private DJ Party">
+            <span class="event-tag">Private DJ Party</span>
+          </div>
+
+        </div>
+
+
+
+        <div class="reserv_form event_form">
+          <form action="https://formsubmit.co/rsubhamprojects@gmail.com" method="POST" id="event_form"
+            class="reserv_form">
+            <input type="hidden" name="_subject" value="New Event Booking – Storyline Café">
+            <input type="hidden" name="_captcha" value="false">
+
+            <div class="form-row">
+              <div class="form-field">
+                <input type="text" name="Full Name" id="Name" placeholder="Full Name" required>
+              </div>
+              <div class="form-field">
+                <input type="tel" name="Phone Number" id="Phone" placeholder="Phone Number" required>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-field">
+                <label for="EventDate">Event Date</label>
+                <input type="date" name="Event Date" id="EventDate" required>
+              </div>
+              <div class="form-field">
+                <label for="EventTime">Event Time</label>
+                <input type="time" name="Event Time" id="EventTime" required>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-field">
+                <select name="Event Type" id="EventType" required>
+                  <option value="">Select Event Type</option>
+                  <option value="Birthday">Birthday</option>
+                  <option value="Pool Party">Pool Party</option>
+                  <option value="Pre Wedding">Pre Wedding</option>
+                  <option value="Wedding">Wedding</option>
+                  <option value="Date Night">Date Night</option>
+                  <option value="Rain Dance">Rain Dance</option>
+                  <option value="Camping">Camping</option>
+                  <option value="Bonfire">Bonfire</option>
+                  <option value="Private Party">Private Party</option>
+                  <option value="Other">Other(Please, describe your event in few lines bellow.)</option>
+                </select>
+              </div>
+
+              <div class="form-field">
+                <input type="number" name="Guests" id="Guests" min="1" placeholder="Number of Guests" required>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-field">
+                <select name="Outlet" id="Outlet" required>
+                  <option value="" disabled>Select Outlet</option>
+                  <option value="Gopalpur On Sea" selected>Gopalpur On Sea</option>
+                  <option value="Brahmapur" disabled>Brahmapur</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-field full-width">
+                <textarea name="Special Requests / Notes" id="Notes"
+                  placeholder="Decoration, catering, seating, AV setup, or other requests..." rows="4"></textarea>
+              </div>
+            </div>
+
+            <button type="submit" class="btn">Book Event</button>
+          </form>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+
+  <a href="https://wa.me/+917008808423?text=Hi%2C%20I%20want%20to%20reach%20out%20for%20an%20event%20or%20table%20or%20stay%20booking%20at%20Storyline%20Caf%C3%A9%2E"
+    class="whatsapp-float" target="_blank" rel="noopener noreferrer">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="Chat on WhatsApp" width="55"
+      height="auto" />
+  </a>
+
+
+  <footer class="footer">
+    <div class="footer_container">
+
+      <div class="footer_about">
+        <div class="footer_logo">
+          <img src="/Assets/Logo/Logo.png" alt="" srcset="">
+        </div>
+        <h2 class="section_subheader">About Storyline Café</h2>
+        <p>
+          Storyline Café is more than just a place to eat — it’s where flavors,
+          memories, and stories come together. From coffee dates to celebrations,
+          we make every moment special.
+        </p>
+        <div class="footer_socials">
+          <a href="https://www.instagram.com/storyline_cafe/" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.instagram.com/storylinecafe/" target="_blank"><i class="fab fa-instagram"></i></a>
+          <!-- <a href="#" target="_blank"><i class="fa-brands fa-x-twitter"></i></a> -->
+          <a href="https://www.facebook.com/CreateYourOwnStorieeees/" target="_blank"><i
+              class="fab fa-facebook-f"></i></a>
+          <!-- <a href="#" target="_blank"><i class="fab fa-youtube"></i></a> -->
+        </div>
+      </div>
+
+      <div class="footer_mid">
+        <ul class="footer_links" id="footer_links">
+          <li><a href="/" class="footer_active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#reservation">Reservation</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#outlets">Outlets</a></li>
+          <li><a href="#memories">Memories</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer_contact">
+        <h2 class="section_subheader">Contact</h2>
+
+
+        <div class="footer_row">
+          <p class="footer_phone"><i class="fas fa-phone"></i> +91 70088 08423</p>
+          <p class="footer_email"><i class="fas fa-envelope"></i> info@storylinecafe.in</p>
+        </div>
+      </div>
+
+
+    </div>
+
+    <div class="footer_bottom">
+      <p>© 2025 Storyline Café. All rights reserved.</p>
+    </div>
+  </footer>
+
+
+
+
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="/main.js"></script>
+  <script src="/Reservation/reserv.js"></script>
+  <script src="/Reservation/time.js"></script>
+  <script src="/Reservation/alert.js"></script>
+</body>
+
+</html>

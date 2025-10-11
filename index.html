@@ -83,7 +83,15 @@
             <li><a href="./" class="nav_link_active">Home</a></li>
             <li><a href="./About">About</a></li>
             <li><a href="./Menu">Menu</a></li>
-            <li><a href="./Reservation">Reservation</a></li>
+            <li class="reservation_dropdown">
+                <a href="./Reservation">Reservation</a>
+                <ul class="dropdown_menu">
+                    <li><a href="./Reservation#Table">Table</a></li>
+                    <li><a href="./Reservation#Stay">Stay</a></li>
+                    <li><a href="./Reservation#Event">Event</a></li>
+                </ul>
+            </li>
+            <li class="reservation_nodropdown"><a href="./Reservation">Reservation</a></li>
             <li><a href="./Gallery">Gallery</a></li>
             <li><a href="./Outlets">Outlets</a></li>
             <li><a href="./Memories">Memories</a></li>
@@ -199,7 +207,7 @@
 
             <div class="dine_btn">
                 <button class="btn view" onclick="window.location.href='/Menu/'">View The Menu</button>
-                <button class="btn reserve" onclick="window.location.href='/Reservation/'">Reserve A Table</button>
+                <button class="btn reserve" onclick="window.location.href='/Reservation#Table'">Reserve A Table</button>
             </div>
         </div>
     </section>
@@ -268,7 +276,7 @@
                 </div>
             </div>
             <div class="room_btn">
-                <button class="btn" onclick="window.location.href='/Reservation/'">Reserve A Stay</button>
+                <button class="btn" onclick="window.location.href='/Reservation#Stay'">Reserve A Stay</button>
             </div>
         </div>
     </section>
@@ -305,7 +313,7 @@
 
             </div>
             <div class="event_btn">
-                <button class="btn" onclick="window.location.href='/Reservation/'">Book An Event</button>
+                <button class="btn" onclick="window.location.href='/Reservation#Event'">Book An Event</button>
             </div>
         </div>
     </section>

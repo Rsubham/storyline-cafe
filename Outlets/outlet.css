@@ -1,0 +1,204 @@
+.outlet_hero {
+  position: relative;
+  background: url("/Assets/Hero/1.jpg") center/cover no-repeat;
+  height: max-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-block: 2rem;
+}
+.outlet_hero_overlay {
+  position: absolute;
+  inset: 0;
+  background: black;
+  opacity: .75;
+}
+.outlet_hero_content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  width: var(--max-width);
+  padding-bottom: 0;
+  padding-top: 5rem;
+  padding-left: 1rem;
+}
+
+.outlet_hero_content p,
+.outlet_hero_content h1 {
+  color: var(--white);
+}
+
+.outlet_hero_content p {
+  font-size: 1.5rem;
+  font-weight: 500;
+  font-family: var(--font-primary);
+}
+
+.outlet_hero_content h1 {
+  font-size: 4rem;
+  font-weight: 500;
+}
+
+/* Outlet section */
+.outlet_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.outlet_container.reverse {
+  border-top: 2px solid rgba(139, 139, 139, 0.148);
+  flex-direction: row-reverse;
+}
+
+.outlet_image {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  border-radius: 10px;
+  padding: 1rem 0rem;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+}
+.outlet_image img {
+  width: 95%;
+  object-fit: cover;
+  transition: transform .6s ease;
+  border-radius: 10px;
+}
+
+.outlet_image2 img {
+  height: 350px;
+}
+.outlet_image img:hover {
+  transform: scale(1.03);
+}
+
+.outlet_content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.5rem;
+}
+.outlet_content .section_header {
+  font-size: 2rem;
+  margin-bottom: 0rem;
+}
+.outlet_content .section_description {
+  margin-bottom: 0rem;
+  line-height: 1.7;
+  color: var(--text-light);
+  font-size: 1rem;
+}
+
+.outlet_details {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 1.1rem;
+  font-family: var(--font-primary);
+}
+.outlet_details li {
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+}
+.outlet_details li i {
+  color: var(--primary);
+  margin-right: 5px;
+  font-size: 1.1rem;
+}
+
+.outlet_services h3,
+.outlet_experiences h3,
+.outlet_restaurant h3 {
+  font-family: var(--font-secondary);
+  font-size: 1.5rem;
+  margin-bottom: 0.6rem;
+  font-weight: 900;
+}
+.outlet_services p,
+.outlet_experiences p,
+.outlet_restaurant p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--text-light);
+  font-family: var(--font-primary);
+}
+
+.outlet_highlights {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+.highlight {
+  background: #fff;
+  padding: 1.2rem 1rem;
+  border-radius: 10px;
+  flex: 1 1 130px;
+  text-align: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+  cursor: pointer;
+  font-family: var(--font-primary);
+}
+.highlight i {
+  font-size: 1.6rem;
+  color: var(--primary);
+  margin-bottom: 0.5rem;
+  transition: transform 0.3s ease;
+}
+.highlight p {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--text-light);
+}
+.highlight:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+.highlight:hover i {
+  transform: scale(1.2);
+}
+
+
+@media (max-width: 768px) {
+  .outlet_hero {
+    padding-block: 0.5rem;
+  }
+
+  .outlet_hero_content {
+    padding-top: 5rem;
+    padding-left: 0;
+  }
+
+  .outlet_hero_content p {
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: var(--font-primary);
+    text-align: center;
+  }
+
+  .outlet_hero_content h1 {
+    font-size: 3rem;
+    font-weight: 500;
+    text-align: center;
+  }
+
+  .outlet_container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .outlet_container.reverse {
+    flex-direction: column;
+  }
+}

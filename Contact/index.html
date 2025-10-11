@@ -65,14 +65,22 @@
             </div>
         </div>
         <ul class="nav_links" id="nav-links">
-            <li><a href="../">Home</a></li>
-            <li><a href="../About">About</a></li>
-            <li><a href="../Menu">Menu</a></li>
-            <li><a href="../Reservation">Reservation</a></li>
-            <li><a href="../Gallery">Gallery</a></li>
-            <li><a href="../Outlets">Outlets</a></li>
-            <li><a href="../Memories">Memories</a></li>
-            <li><a href="../Contact" class="nav_link_active">Contact</a></li>
+            <li><a href="/">Home</a></li>
+            <li><a href="/About">About</a></li>
+            <li><a href="/Menu">Menu</a></li>
+            <li class="reservation_dropdown">
+                <a href="/Reservation">Reservation</a>
+                <ul class="dropdown_menu">
+                    <li><a href="/Reservation#Table">Table</a></li>
+                    <li><a href="/Reservation#Stay">Stay</a></li>
+                    <li><a href="/Reservation#Event">Event</a></li>
+                </ul>
+            </li>
+            <li class="reservation_nodropdown"><a href="/Reservation">Reservation</a></li>
+            <li><a href="/Gallery">Gallery</a></li>
+            <li><a href="/Outlets">Outlets</a></li>
+            <li><a href="/Memories">Memories</a></li>
+            <li><a href="/Contact"  class="nav_link_active">Contact</a></li>
         </ul>
         <button class="btn nav_btn" onclick="window.location.href='/Reservation/'">Reservation</button>
     </nav>
@@ -80,8 +88,8 @@
     <section class="contact_hero section">
         <div class="contact_hero_overlay"></div>
         <div class="contact_hero_content section_container">
-            <p class="section_header">Storyline Café — Dine, Stay & Celebrate</p>
-            <h1 class="section_header">Contact US</h1>
+            <p class="section_header">We’re Just a Message Away.</p>
+            <h1 class="section_header">Get in Touch</h1>
         </div>
     </section>
 
@@ -157,18 +165,18 @@
 
 
 
-    <section class="contact_cta section">
-        <div class="contact_cta_overlay"></div>
-        <div class="contact_cta_container section_container">
+    <section class="cta section">
+        <div class="cta_overlay"></div>
+        <div class="cta_container section_container">
             <h2 class="section_header">Come, Be Part of Our Story</h2>
             <p class="section_description">
                 Whether you’re dining, staying, or celebrating — your memories
                 find a home at Storyline Café.
             </p>
             <div class="cta_buttons">
-                <a href="#" class="btn" onclick="window.location.href='/Reservation/'">Reserve A Table</a>
-                <a href="#" class="btn" onclick="window.location.href='/Reservation/'">Reserve A Stay</a>
-                <a href="#" class="btn" onclick="window.location.href='/Reservation/'">Book An Event</a>
+                <a href="/Reservation#Table" class="btn">Reserve A Table</a>
+                <a href="/Reservation#Stay" class="btn">Reserve A Stay</a>
+                <a href="/Reservation#Event" class="btn">Book An Event</a>
             </div>
         </div>
     </section>

@@ -71,16 +71,16 @@ ScrollReveal().reveal(".contact-form", {
 });
 
 // cta container
-ScrollReveal().reveal(".contact_cta_container h2", {
+ScrollReveal().reveal(".cta_container h2", {
   ...scrollRevealOption,
 });
 
-ScrollReveal().reveal(".contact_cta_container p", {
+ScrollReveal().reveal(".cta_container p", {
   ...scrollRevealOption,
   delay: 400,
 });
 
-ScrollReveal().reveal(".contact_cta_container .btn", {
+ScrollReveal().reveal(".cta_container .btn", {
   ...scrollRevealOption,
   delay: 800,
   distance: "0px",

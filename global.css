@@ -3,7 +3,7 @@
   --primary-dark: #db1515;
   --bg-dark: #1e232b;
   --text-dark: #0c0a09;
-  --text-light: #78716c;
+  --text-light: #605b57;
   --white: #ffffff;
   --off-white: #f8f5f0;
   --max-width: 1200px;
@@ -211,8 +211,65 @@ nav {
   color: var(--primary);
 }
 
+/* Dropdown Reservation */
+.reservation_dropdown {
+  position: relative;
+}
+
+.reservation_nodropdown{
+    display: none;
+  }
+
+.dropdown_menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: rgba(0, 0, 0, 0.2);
+  list-style: none;
+  padding: 0.5rem 0;
+  border-radius: 0.5rem;
+  min-width: 150px;
+  display: none;
+  flex-direction: column;
+  gap: 0.2rem;
+  transition: 0.3s ease-in-out;
+  z-index: 1000;
+  backdrop-filter: blur(6px);
+}
+
+.dropdown_menu li a {
+  display: block;
+  padding: 0.5rem 1rem;
+  color: var(--white);
+  opacity: 0.9;
+  font-size: 0.95rem;
+  transition: 0.3s;
+}
+
+.dropdown_menu li a:hover {
+  color: var(--white);
+  opacity: 1;
+}
+
+.reservation_dropdown:hover .dropdown_menu {
+  display: flex;
+  animation: dropdownFade 0.3s ease-in-out;
+}
+
+@keyframes dropdownFade {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
 /* cta section */
-.about_cta {
+.cta {
   position: relative;
   background: url("/Assets/Hero/1.jpg") center/cover no-repeat;
   height: max-content;
@@ -222,14 +279,14 @@ nav {
   text-align: center;
 }
 
-.about_cta_overlay {
+.cta_overlay {
   position: absolute;
   inset: 0;
   background: black;
   opacity: 0.7;
 }
 
-.about_cta_container {
+.cta_container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -239,13 +296,13 @@ nav {
   padding-block: 3rem;
 }
 
-.about_cta_container h2 {
+.cta_container h2 {
   font-size: 2rem;
   color: var(--white);
   text-align: center;
 }
 
-.about_cta_container p {
+.cta_container p {
   margin-bottom: 1.5rem;
   color: var(--white);
   text-align: center;
@@ -749,6 +806,15 @@ nav {
 /* Responsive */
 
 @media (max-width: 768px) {
+  /* nav */
+  .reservation_dropdown{
+    display: none;
+  }
+
+  .reservation_nodropdown{
+    display: block;
+  }
+
   /* gallery */
   .carousel_container {
     height: 250px;
