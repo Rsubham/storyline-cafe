@@ -344,9 +344,15 @@
     text-align: center;
   }
 
-  .table_reserv_content, .room_reserv_content, .event_reserv_content {
+  .table_reserv_content, .event_reserv_content {
     grid-template-columns: repeat(1, 1fr);
     gap: 1.5rem;
+  }
+
+  .room_reserv_content{
+    display: flex;
+    flex-direction: column-reverse;
+    
   }
 
   .table_reserv_assets img {
