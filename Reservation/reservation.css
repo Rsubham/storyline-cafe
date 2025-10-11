@@ -379,4 +379,8 @@
   min-height: 100px;
 }
 
+.event-tag {
+  font-size: .5rem;
+}
+
 }
