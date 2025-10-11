@@ -1,4 +1,3 @@
-// dine card
 const folderPath = "/Assets/Reservation/Table/";
 const imageCount = 12;
 const columns = 4;
@@ -54,10 +53,6 @@ async function loadImages() {
 
 loadImages();
 
-window.addEventListener("resize", () => {
-  clearTimeout(window._scatterTimeout);
-  window._scatterTimeout = setTimeout(loadImages, 300);
-});
 
 
 // feature card
