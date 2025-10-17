@@ -1,0 +1,1340 @@
+[
+  {
+    "dish_name": "Veg Hot & Sour Soup",
+    "price": "99",
+    "type": "Soup",
+    "veg_type": "Veg"
+  },
+  {
+    "dish_name": "Non Veg Hot & Sour Soup",
+    "price": "119",
+    "type": "Soup",
+    "veg_type": "Non-Veg"
+  },
+  {
+    "dish_name": "Veg Hot Manchow Soup",
+    "price": "99",
+    "type": "Soup",
+    "veg_type": "Veg"
+  },
+  {
+    "dish_name": "Non Veg Hot Manchow Soup",
+    "price": "119",
+    "type": "Soup",
+    "veg_type": "Non-Veg"
+  },
+  {
+    "dish_name": "Sweet Corn Soup",
+    "price": "99",
+    "type": "Soup",
+    "veg_type": "Veg"
+  },
+  {
+    "dish_name": "shrimp galic soup",
+    "price": "129",
+    "type": "Soup",
+    "veg_type": "Non-Veg"
+  },
+  {
+    "dish_name": "Veg Maggie",
+    "price": "129",
+    "type": "Maggie",
+    "veg_type": "Veg"
+  },
+  {
+    "dish_name": "Cheese Maggie",
+    "price": "139",
+    "type": "Maggie",
+    "veg_type": "Veg"
+  },
+  {
+    "dish_name": "Veg Mix",
+    "price": "149",
+    "type": "Vegetarian",
+    "veg_type": "Veg"
+  },
+  {
+    "dish_name": "Egg Maggie",
+    "price": "139",
+    "type": "Maggie",
+    "veg_type": "Non-Veg"
+  },
+  {
+    "dish_name": "Chicken Maggie",
+    "price": "149",
+    "type": "Maggie",
+    "veg_type": "Non-Veg"
+  },
+  {
+    "dish_name": "Non Veg mix maggie",
+    "price": "179",
+    "type": "Maggie",
+    "veg_type": "Non-Veg"
+  },
+  {
+    "dish_name": "Classic coffe",
+    "price": "249",
+    "type": "Coffee",
+    "veg_type": "Veg"
+  },
+  {
+    "dish_name": "Black coffe",
+    "price": "229",
+    "type": "Coffee",
+    "veg_type": "Veg"
+  },
+  {
+    "dish_name": "Cappuccino",
+    "price": "229",
+    "type": "Coffee",
+    "veg_type": "Veg"
+  },
+  {
+    "dish_name": "Lattee",
+    "price": "229",
+    "type": "Coffee",
+    "veg_type": "Veg"
+  },
+  {
+    "dish_name": "Mocha",
+    "price": "109",
+    "type": "Coffee",
+    "veg_type": "Veg"
+  },
+  {
+    "dish_name": "Hot Choclate",
+    "price": "109",
+    "type": "Coffee",
+    "veg_type": "Veg"
+  },
+  {
+    "dish_name": "Hot Choclate with Marshmellow",
+    "price": "139",
+    "type": "Coffee",
+    "veg_type": "Veg"
+  },
+  {
+    "dish_name": "Classic Tea",
+    "price": "49",
+    "type": "Tea",
+    "veg_type": "Veg"
+  },
+  {
+    "dish_name": "Ginger Tea",
+    "price": "59",
+    "type": "Tea",
+    "veg_type": "Veg"
+  },
+  {
+    "dish_name": "Green Tea",
+    "price": "49",
+    "type": "Tea",
+    "veg_type": "Veg"
+  },
+  {
+    "dish_name": "Lemon Tea",
+    "price": "69",
+    "type": "Tea",
+    "veg_type": "Veg"
+  },
+  {
+    "dish_name": "Ginger Lemon Tea",
+    "price": "79",
+    "type": "Tea",
+    "veg_type": "Veg"
+  },
+  {
+    "dish_name": "Veg Noodles",
+    "price": "129",
+    "type": "Noodles",
+    "veg_type": "Veg"
+  },
+  {
+    "dish_name": "Veg Schezwan Noodles",
+    "price": "149",
+    "type": "Noodles",
+    "veg_type": "Veg"
+  },
+  {
+    "dish_name": "Veg Mix Noodles",
+    "price": "179",
+    "type": "Noodles",
+    "veg_type": "Veg"
+  },
+  {
+    "dish_name": "Egg Noodles",
+    "price": "139",
+    "type": "Noodles",
+    "veg_type": "Non-Veg"
+  },
+  {
+    "dish_name": "Chciken Noodles",
+    "price": "179",
+    "type": "Noodles",
+    "veg_type": "Non-Veg"
+  },
+  {
+    "dish_name": "Non-Veg mix Noodles",
+    "price": "199",
+    "type": "Noodles",
+    "veg_type": "Non-Veg"
+  },
+  {
+    "dish_name": "Non-Veg Schezwan Noodles",
+    "price": "229",
+    "type": "Noodles",
+    "veg_type": "Non-Veg"
+  },
+  {
+    "dish_name": "Plain Rice",
+    "price": "80",
+    "type": "Rice",
+    "veg_type": "Veg"
+  },
+  {
+    "dish_name": "Veg fried Rice",
+    "price": "149",
+    "type": "Rice",
+    "veg_type": "Veg"
+  },
+  {
+    "dish_name": "Corn Fried rice",
+    "price": "159",
+    "type": "Rice",
+    "veg_type": "Veg"
+  },
+  {
+    "dish_name": "Veg Mix fried rice",
+    "price": "199",
+    "type": "Rice",
+    "veg_type": "Veg"
+  },
+  {
+    "dish_name": "jeera rice",
+    "price": "100",
+    "type": "Rice",
+    "veg_type": "Veg"
+  },
+  {
+    "dish_name": "egg fried rice",
+    "price": "159",
+    "type": "Rice",
+    "veg_type": "Non-Veg"
+  },
+  {
+    "dish_name": "Chicken fried rice",
+    "price": "179",
+    "type": "Rice",
+    "veg_type": "Non-Veg"
+  },
+  {
+    "dish_name": "Non veg mixed fried rice",
+    "price": "199",
+    "type": "Rice",
+    "veg_type": "Non-Veg"
+  },
+  {
+    "dish_name": "French Fries",
+    "price": "119",
+    "type": "Snacks",
+    "veg_type": "Veg"
+  },
+  {
+    "dish_name": "Peri Peri French Fries",
+    "price": "129",
+    "type": "Snacks",
+    "veg_type": "Veg"
+  },
+  {
+    "dish_name": "American Corn fry",
+    "price": "199",
+    "type": "Snacks",
+    "veg_type": "Veg"
+  },
+  {
+    "dish_name": "Corn Salt and paper",
+    "price": "229",
+    "type": "Snacks",
+    "veg_type": "Veg"
+  },
+  {
+    "dish_name": "Veg Manchurian",
+    "price": "199",
+    "type": "Veg Starters",
+    "veg_type": "Veg"
+  },
+  {
+    "dish_name": "Mushroom Manchurian",
+    "price": "239",
+    "type": "Veg Starters",
+    "veg_type": "Veg"
+  },
+  {
+    "dish_name": "Mushroom Majestic",
+    "price": "239",
+    "type": "Veg Starters",
+    "veg_type": "Veg"
+  },
+  {
+    "dish_name": "Mushroom Chilly",
+    "price": "239",
+    "type": "Veg Starters",
+    "veg_type": "Veg"
+  },
+  {
+    "dish_name": "Mushroom Chatpatta",
+    "price": "239",
+    "type": "Veg Starters",
+    "veg_type": "Veg"
+  },
+  {
+    "dish_name": "Mushroom Pakoda",
+    "price": "219",
+    "type": "Veg Starters",
+    "veg_type": "Veg"
+  },
+  {
+    "dish_name": "Mushroom 65",
+    "price": "239",
+    "type": "Veg Starters",
+    "veg_type": "Veg"
+  },
+  {
+    "dish_name": "Paneer Manchurian",
+    "price": "259",
+    "type": "Vegetarian",
+    "veg_type": "Veg"
+  },
+  {
+    "dish_name": "Paneer 65",
+    "price": "259",
+    "type": "Vegetarian",
+    "veg_type": "Veg"
+  },
+  {
+    "dish_name": "Paneer Majestic",
+    "price": "259",
+    "type": "Vegetarian",
+    "veg_type": "Veg"
+  },
+  {
+    "dish_name": "Paneer Chilly",
+    "price": "259",
+    "type": "Veg Starters",
+    "veg_type": "Veg"
+  },
+  {
+    "dish_name": "Paneer Pakoda",
+    "price": "209",
+    "type": "Veg Starters",
+    "veg_type": "Veg"
+  },
+  {
+    "dish_name": "Chef Special Paneer crunch",
+    "price": "299",
+    "type": "Vegetarian",
+    "veg_type": "Veg"
+  },
+  {
+    "dish_name": "baby corn chilly",
+    "price": "239",
+    "type": "Veg Starters",
+    "veg_type": "Veg"
+  },
+  {
+    "dish_name": "baby corn chapata",
+    "price": "239",
+    "type": "Veg Starters",
+    "veg_type": "Veg"
+  },
+  {
+    "dish_name": "Crispy baby corn",
+    "price": "239",
+    "type": "Veg Starters",
+    "veg_type": "Veg"
+  },
+  {
+    "dish_name": "Mushroom Manchurian Sandwich",
+    "price": "229",
+    "type": "Sandwich",
+    "veg_type": "Veg"
+  },
+  {
+    "dish_name": "Veg Sandwich",
+    "price": "189",
+    "type": "Sandwich",
+    "veg_type": "Veg"
+  },
+  {
+    "dish_name": "Paneer Sandwich",
+    "price": "229",
+    "type": "Sandwich",
+    "veg_type": "Veg"
+  },
+  {
+    "dish_name": "Veg mayo sandwich",
+    "price": "199",
+    "type": "Sandwich",
+    "veg_type": "Veg"
+  },
+  {
+    "dish_name": "Corn mayo sanwich",
+    "price": "229",
+    "type": "Sandwich",
+    "veg_type": "Veg"
+  },
+  {
+    "dish_name": "Veg mix club sandwich",
+    "price": "279",
+    "type": "Sandwich",
+    "veg_type": "Veg"
+  },
+  {
+    "dish_name": "Chicken Sandwich",
+    "price": "259",
+    "type": "Sandwich",
+    "veg_type": "Non-Veg"
+  },
+  {
+    "dish_name": "Chicken Club Sandwich",
+    "price": "299",
+    "type": "Sandwich",
+    "veg_type": "Non-Veg"
+  },
+  {
+    "dish_name": "Chicken Mayo sandwich",
+    "price": "299",
+    "type": "Sandwich",
+    "veg_type": "Non-Veg"
+  },
+  {
+    "dish_name": "Chicken cheese sandwich",
+    "price": "299",
+    "type": "Sandwich",
+    "veg_type": "Non-Veg"
+  },
+  {
+    "dish_name": "Chocolate Sandwich",
+    "price": "249",
+    "type": "Dessert",
+    "veg_type": "Veg"
+  },
+  {
+    "dish_name": "Veg Burger",
+    "price": "89",
+    "type": "Burger",
+    "veg_type": "Veg"
+  },
+  {
+    "dish_name": "Paneer tikka burger",
+    "price": "119",
+    "type": "Burger",
+    "veg_type": "Non-Veg"
+  },
+  {
+    "dish_name": "Chicken Burger",
+    "price": "129",
+    "type": "Burger",
+    "veg_type": "Non-Veg"
+  },
+  {
+    "dish_name": "Double decker chicken burger",
+    "price": "199",
+    "type": "Burger",
+    "veg_type": "Non-Veg"
+  },
+  {
+    "dish_name": "Veg White Sauce Pasta",
+    "price": "259",
+    "type": "Pasta",
+    "veg_type": "Veg"
+  },
+  {
+    "dish_name": "Red Sauce Veg Pasta",
+    "price": "259",
+    "type": "Pasta",
+    "veg_type": "Veg"
+  },
+  {
+    "dish_name": "Mushroom White Sauce",
+    "price": "259",
+    "type": "Pasta",
+    "veg_type": "Veg"
+  },
+  {
+    "dish_name": "Mushroom Red Sauce",
+    "price": "269",
+    "type": "Pasta",
+    "veg_type": "Veg"
+  },
+  {
+    "dish_name": "Paneer Red sauce",
+    "price": "269",
+    "type": "Pasta",
+    "veg_type": "Veg"
+  },
+  {
+    "dish_name": "Spicy Veg Masala pasta",
+    "price": "189",
+    "type": "Pasta",
+    "veg_type": "Veg"
+  },
+  {
+    "dish_name": "Chicken White Sauce",
+    "price": "259",
+    "type": "Pasta",
+    "veg_type": "Non-Veg"
+  },
+  {
+    "dish_name": "Chicken Red sauce",
+    "price": "269",
+    "type": "Pasta",
+    "veg_type": "Non-Veg"
+  },
+  {
+    "dish_name": "Spicy Chicken Masala",
+    "price": "219",
+    "type": "Indian Curry",
+    "veg_type": "Non-Veg"
+  },
+  {
+    "dish_name": "Cheese Garlic Bread",
+    "price": "229",
+    "type": "Garlic Bread",
+    "veg_type": "Veg"
+  },
+  {
+    "dish_name": "Chicken Cheese garlic bread",
+    "price": "249",
+    "type": "Garlic Bread",
+    "veg_type": "Non-Veg"
+  },
+  {
+    "dish_name": "Omelette",
+    "price": "89",
+    "type": "Veg Starters",
+    "veg_type": "Non-Veg"
+  },
+  {
+    "dish_name": "Chicken Cheese Omelette",
+    "price": "149",
+    "type": "Non-Veg Starters",
+    "veg_type": "Non-Veg"
+  },
+  {
+    "dish_name": "Margherita Pizza",
+    "price": "199",
+    "type": "Pizza",
+    "veg_type": "Veg"
+  },
+  {
+    "dish_name": "Veg mushrrom pizza",
+    "price": "279",
+    "type": "Pizza",
+    "veg_type": "Veg"
+  },
+  {
+    "dish_name": "Veg Paneer Pizza",
+    "price": "279",
+    "type": "Pizza",
+    "veg_type": "Veg"
+  },
+  {
+    "dish_name": "Veg Mix Supreme Pizza",
+    "price": "299",
+    "type": "Pizza",
+    "veg_type": "Veg"
+  },
+  {
+    "dish_name": "Crispy Chicken Pizza",
+    "price": "299",
+    "type": "Pizza",
+    "veg_type": "Non-Veg"
+  },
+  {
+    "dish_name": "Peri Peri Chicken Pizza",
+    "price": "299",
+    "type": "Pizza",
+    "veg_type": "Non-Veg"
+  },
+  {
+    "dish_name": "Sweet & Spicy Chicken Pizza",
+    "price": "299",
+    "type": "Pizza",
+    "veg_type": "Non-Veg"
+  },
+  {
+    "dish_name": "Chicken Overload Pizza",
+    "price": "329",
+    "type": "Pizza",
+    "veg_type": "Non-Veg"
+  },
+  {
+    "dish_name": "Chiken Tikka",
+    "price": "299",
+    "type": "Tandoori",
+    "veg_type": "Non-Veg"
+  },
+  {
+    "dish_name": "Chicken Tandoori",
+    "price": "229",
+    "type": "Tandoori",
+    "veg_type": "Non-Veg"
+  },
+  {
+    "dish_name": "Malai Tikka",
+    "price": "349",
+    "type": "Tandoori",
+    "veg_type": "Non-Veg"
+  },
+  {
+    "dish_name": "Pudina Tiika",
+    "price": "349",
+    "type": "Tandoori",
+    "veg_type": "Veg"
+  },
+  {
+    "dish_name": "Hariyali Tikka",
+    "price": "349",
+    "type": "Tandoori",
+    "veg_type": "Non-Veg"
+  },
+  {
+    "dish_name": "Tangdi Kabab",
+    "price": "289",
+    "type": "Tandoori",
+    "veg_type": "Non-Veg"
+  },
+  {
+    "dish_name": "Fish Tandoori Bone",
+    "price": "449",
+    "type": "Tandoori",
+    "veg_type": "Non-Veg"
+  },
+  {
+    "dish_name": "Fish Tandoori Boneless",
+    "price": "549",
+    "type": "Tandoori",
+    "veg_type": "Non-Veg"
+  },
+  {
+    "dish_name": "Prawan Tandoori",
+    "price": "549",
+    "type": "Tandoori",
+    "veg_type": "Non-Veg"
+  },
+  {
+    "dish_name": "Prawan Malai",
+    "price": "549",
+    "type": "Tandoori",
+    "veg_type": "Non-Veg"
+  },
+  {
+    "dish_name": "Prawan Hariyali",
+    "price": "599",
+    "type": "Tandoori",
+    "veg_type": "Non-Veg"
+  },
+  {
+    "dish_name": "Panner Tandoori Tikka",
+    "price": "299",
+    "type": "Tandoori",
+    "veg_type": "Non-Veg"
+  },
+  {
+    "dish_name": "Panner Malai Tikka",
+    "price": "299",
+    "type": "Tandoori",
+    "veg_type": "Non-Veg"
+  },
+  {
+    "dish_name": "Mashroom Tandoori",
+    "price": "299",
+    "type": "Tandoori",
+    "veg_type": "Non-Veg"
+  },
+  {
+    "dish_name": "Brownie",
+    "price": "109",
+    "type": "Dessert",
+    "veg_type": "Veg"
+  },
+  {
+    "dish_name": "Brownie With Ice Cream",
+    "price": "159",
+    "type": "Dessert",
+    "veg_type": "Veg"
+  },
+  {
+    "dish_name": "Fruit Custard",
+    "price": "179",
+    "type": "Dessert",
+    "veg_type": "Veg"
+  },
+  {
+    "dish_name": "Sweet Curd",
+    "price": "99",
+    "type": "Dessert",
+    "veg_type": "Veg"
+  },
+  {
+    "dish_name": "Caremel Pudding",
+    "price": "129",
+    "type": "Dessert",
+    "veg_type": "Veg"
+  },
+  {
+    "dish_name": "Choco Brownie Sundae",
+    "price": "199",
+    "type": "Dessert",
+    "veg_type": "Veg"
+  },
+  {
+    "dish_name": "Ice Cream Sundae",
+    "price": "239",
+    "type": "Dessert",
+    "veg_type": "Veg"
+  },
+  {
+    "dish_name": "Sizzling Bownie wt Vanila Icecream",
+    "price": "239",
+    "type": "Dessert",
+    "veg_type": "Veg"
+  },
+  {
+    "dish_name": "Sizzling Bownie wt Chocolate Icecream",
+    "price": "259",
+    "type": "Dessert",
+    "veg_type": "Veg"
+  },
+  {
+    "dish_name": "Vanilla",
+    "price": "99",
+    "type": "Ice Cream",
+    "veg_type": "Veg"
+  },
+  {
+    "dish_name": "Choclate Icecream",
+    "price": "99",
+    "type": "Ice Cream",
+    "veg_type": "Veg"
+  },
+  {
+    "dish_name": "Black Current",
+    "price": "99",
+    "type": "Ice Cream",
+    "veg_type": "Veg"
+  },
+  {
+    "dish_name": "Strawberry",
+    "price": "99",
+    "type": "Ice Cream",
+    "veg_type": "Veg"
+  },
+  {
+    "dish_name": "Butter Scotch",
+    "price": "99",
+    "type": "Ice Cream",
+    "veg_type": "Veg"
+  },
+  {
+    "dish_name": "Chicken Butter Masala",
+    "price": "259",
+    "type": "Indian Curry",
+    "veg_type": "Non-Veg"
+  },
+  {
+    "dish_name": "Methi chicken",
+    "price": "259",
+    "type": "Indian Curry",
+    "veg_type": "Non-Veg"
+  },
+  {
+    "dish_name": "Chicken Curry",
+    "price": "259",
+    "type": "Indian Curry",
+    "veg_type": "Non-Veg"
+  },
+  {
+    "dish_name": "Kadhai Chicken",
+    "price": "259",
+    "type": "Indian Curry",
+    "veg_type": "Non-Veg"
+  },
+  {
+    "dish_name": "Hyderabadi Chicken",
+    "price": "259",
+    "type": "Indian Curry",
+    "veg_type": "Non-Veg"
+  },
+  {
+    "dish_name": "Chicken Lababdar",
+    "price": "259",
+    "type": "Indian Curry",
+    "veg_type": "Non-Veg"
+  },
+  {
+    "dish_name": "Malai Chicken",
+    "price": "299",
+    "type": "Indian Curry",
+    "veg_type": "Non-Veg"
+  },
+  {
+    "dish_name": "Punjabi Chicken",
+    "price": "299",
+    "type": "Indian Curry",
+    "veg_type": "Non-Veg"
+  },
+  {
+    "dish_name": "Chicken Do pyaza",
+    "price": "259",
+    "type": "Indian Curry",
+    "veg_type": "Non-Veg"
+  },
+  {
+    "dish_name": "Muglai Chicken",
+    "price": "299",
+    "type": "Indian Curry",
+    "veg_type": "Non-Veg"
+  },
+  {
+    "dish_name": "Chicken Kassa",
+    "price": "259",
+    "type": "Indian Curry",
+    "veg_type": "Non-Veg"
+  },
+  {
+    "dish_name": "Ghee roast chicken",
+    "price": "299",
+    "type": "Indian Curry",
+    "veg_type": "Non-Veg"
+  },
+  {
+    "dish_name": "Rara Chicken",
+    "price": "299",
+    "type": "Indian Curry",
+    "veg_type": "Non-Veg"
+  },
+  {
+    "dish_name": "Egg Curry",
+    "price": "179",
+    "type": "Indian Curry",
+    "veg_type": "Non-Veg"
+  },
+  {
+    "dish_name": "Egg Masala",
+    "price": "179",
+    "type": "Indian Curry",
+    "veg_type": "Non-Veg"
+  },
+  {
+    "dish_name": "Mutton Curry",
+    "price": "299",
+    "type": "Indian Curry",
+    "veg_type": "Non-Veg"
+  },
+  {
+    "dish_name": "Mutton Rogan Josh",
+    "price": "339",
+    "type": "Indian Curry",
+    "veg_type": "Non-Veg"
+  },
+  {
+    "dish_name": "Ghee roast Mutton",
+    "price": "399",
+    "type": "Indian Curry",
+    "veg_type": "Non-Veg"
+  },
+  {
+    "dish_name": "Mutton Kassa",
+    "price": "339",
+    "type": "Indian Curry",
+    "veg_type": "Non-Veg"
+  },
+  {
+    "dish_name": "Champaran Mutton",
+    "price": "450/799",
+    "type": "Indian Curry",
+    "veg_type": "Non-Veg"
+  },
+  {
+    "dish_name": "Mutton tadka",
+    "price": "349",
+    "type": "Indian Curry",
+    "veg_type": "Non-Veg"
+  },
+  {
+    "dish_name": "Chicken tadka",
+    "price": "269",
+    "type": "Indian Curry",
+    "veg_type": "Non-Veg"
+  },
+  {
+    "dish_name": "Prawn Masala",
+    "price": "309",
+    "type": "Indian Curry",
+    "veg_type": "Non-Veg"
+  },
+  {
+    "dish_name": "Kadai Prawn",
+    "price": "309",
+    "type": "Indian Curry",
+    "veg_type": "Non-Veg"
+  },
+  {
+    "dish_name": "Methi Prawn",
+    "price": "309",
+    "type": "Indian Curry",
+    "veg_type": "Non-Veg"
+  },
+  {
+    "dish_name": "Malai Prawn",
+    "price": "369",
+    "type": "Indian Curry",
+    "veg_type": "Non-Veg"
+  },
+  {
+    "dish_name": "Prawn Kolhapuri",
+    "price": "319",
+    "type": "Indian Curry",
+    "veg_type": "Non-Veg"
+  },
+  {
+    "dish_name": "Prawn Kassa",
+    "price": "339",
+    "type": "Indian Curry",
+    "veg_type": "Non-Veg"
+  },
+  {
+    "dish_name": "Ghee Roast Prawn",
+    "price": "369",
+    "type": "Indian Curry",
+    "veg_type": "Non-Veg"
+  },
+  {
+    "dish_name": "Mushroom Do pyaza",
+    "price": "219",
+    "type": "Vegetarian",
+    "veg_type": "Veg"
+  },
+  {
+    "dish_name": "Mushroom masala",
+    "price": "219",
+    "type": "Vegetarian",
+    "veg_type": "Veg"
+  },
+  {
+    "dish_name": "Mushroom Butter Masla",
+    "price": "219",
+    "type": "Vegetarian",
+    "veg_type": "Veg"
+  },
+  {
+    "dish_name": "Mushroom Hydrabadi",
+    "price": "239",
+    "type": "Vegetarian",
+    "veg_type": "Veg"
+  },
+  {
+    "dish_name": "Mushroom Khurma",
+    "price": "219",
+    "type": "Vegetarian",
+    "veg_type": "Veg"
+  },
+  {
+    "dish_name": "punjabi Mushroom",
+    "price": "219",
+    "type": "Vegetarian",
+    "veg_type": "Veg"
+  },
+  {
+    "dish_name": "malai Mushroom",
+    "price": "239",
+    "type": "Vegetarian",
+    "veg_type": "Veg"
+  },
+  {
+    "dish_name": "Paneer Do pyaza",
+    "price": "229",
+    "type": "Vegetarian",
+    "veg_type": "Veg"
+  },
+  {
+    "dish_name": "Paneer masala",
+    "price": "229",
+    "type": "Vegetarian",
+    "veg_type": "Veg"
+  },
+  {
+    "dish_name": "Paneer Butter Masla",
+    "price": "229",
+    "type": "Vegetarian",
+    "veg_type": "Veg"
+  },
+  {
+    "dish_name": "Kadhai Paneer",
+    "price": "229",
+    "type": "Vegetarian",
+    "veg_type": "Veg"
+  },
+  {
+    "dish_name": "Paneer Lababdar",
+    "price": "159",
+    "type": "Vegetarian",
+    "veg_type": "Veg"
+  },
+  {
+    "dish_name": "Paneer Hydrabadi",
+    "price": "199",
+    "type": "Vegetarian",
+    "veg_type": "Veg"
+  },
+  {
+    "dish_name": "Methi Paneer",
+    "price": "229",
+    "type": "Vegetarian",
+    "veg_type": "Veg"
+  },
+  {
+    "dish_name": "Paneer Khurma",
+    "price": "249",
+    "type": "Vegetarian",
+    "veg_type": "Veg"
+  },
+  {
+    "dish_name": "Matar paneer",
+    "price": "299",
+    "type": "Vegetarian",
+    "veg_type": "Veg"
+  },
+  {
+    "dish_name": "Paneer bhuji",
+    "price": "289",
+    "type": "Vegetarian",
+    "veg_type": "Veg"
+  },
+  {
+    "dish_name": "punjabi paneer",
+    "price": "399",
+    "type": "Vegetarian",
+    "veg_type": "Veg"
+  },
+  {
+    "dish_name": "methi malai paneer",
+    "price": "249",
+    "type": "Vegetarian",
+    "veg_type": "Veg"
+  },
+  {
+    "dish_name": "Mix Veg Curry",
+    "price": "199",
+    "type": "Vegetarian",
+    "veg_type": "Veg"
+  },
+  {
+    "dish_name": "Kadai Veg",
+    "price": "199",
+    "type": "Vegetarian",
+    "veg_type": "Veg"
+  },
+  {
+    "dish_name": "Allo Jeera",
+    "price": "199",
+    "type": "Vegetarian",
+    "veg_type": "Veg"
+  },
+  {
+    "dish_name": "Veg Diwani Handi",
+    "price": "199",
+    "type": "Vegetarian",
+    "veg_type": "Veg"
+  },
+  {
+    "dish_name": "Allo Gobi",
+    "price": "199",
+    "type": "Vegetarian",
+    "veg_type": "Veg"
+  },
+  {
+    "dish_name": "Veg Butter Masala",
+    "price": "199",
+    "type": "Vegetarian",
+    "veg_type": "Veg"
+  },
+  {
+    "dish_name": "Dal Fry",
+    "price": "199",
+    "type": "Vegetarian",
+    "veg_type": "Veg"
+  },
+  {
+    "dish_name": "Dal Lahsuni",
+    "price": "199",
+    "type": "Vegetarian",
+    "veg_type": "Veg"
+  },
+  {
+    "dish_name": "Dal Tadka",
+    "price": "199",
+    "type": "Vegetarian",
+    "veg_type": "Veg"
+  },
+  {
+    "dish_name": "Veg Biriyani",
+    "price": "159",
+    "type": "Biryani",
+    "veg_type": "Veg"
+  },
+  {
+    "dish_name": "Veg Pulao",
+    "price": "199",
+    "type": "Biryani",
+    "veg_type": "Veg"
+  },
+  {
+    "dish_name": "Egg Biryani",
+    "price": "199",
+    "type": "Biryani",
+    "veg_type": "Non-Veg"
+  },
+  {
+    "dish_name": "Chicken Biriyani",
+    "price": "199",
+    "type": "Biryani",
+    "veg_type": "Non-Veg"
+  },
+  {
+    "dish_name": "Mutton Biriyani",
+    "price": "199",
+    "type": "Biryani",
+    "veg_type": "Non-Veg"
+  },
+  {
+    "dish_name": "Bone less chicken biriani",
+    "price": "249",
+    "type": "Biryani",
+    "veg_type": "Non-Veg"
+  },
+  {
+    "dish_name": "Mutton Pulao",
+    "price": "229",
+    "type": "Biryani",
+    "veg_type": "Non-Veg"
+  },
+  {
+    "dish_name": "Virgin Mojito",
+    "price": "139",
+    "type": "Mocktail",
+    "veg_type": "Veg"
+  },
+  {
+    "dish_name": "Blue Lagoon Mojito",
+    "price": "149",
+    "type": "Mocktail",
+    "veg_type": "Veg"
+  },
+  {
+    "dish_name": "Orange Mint Majito",
+    "price": "139",
+    "type": "Mocktail",
+    "veg_type": "Veg"
+  },
+  {
+    "dish_name": "Black Current Majito",
+    "price": "129",
+    "type": "Mocktail",
+    "veg_type": "Veg"
+  },
+  {
+    "dish_name": "Ginger Ale Majito",
+    "price": "139",
+    "type": "Mocktail",
+    "veg_type": "Veg"
+  },
+  {
+    "dish_name": "Maxican Blue Majito",
+    "price": "159",
+    "type": "Mocktail",
+    "veg_type": "Veg"
+  },
+  {
+    "dish_name": "Fresh Lime soda",
+    "price": "79",
+    "type": "Mocktail",
+    "veg_type": "Veg"
+  },
+  {
+    "dish_name": "maxican Lime soda",
+    "price": "99",
+    "type": "Mocktail",
+    "veg_type": "Veg"
+  },
+  {
+    "dish_name": "Lemon Masala Soda",
+    "price": "99",
+    "type": "Mocktail",
+    "veg_type": "Veg"
+  },
+  {
+    "dish_name": "Soft Drink",
+    "price": "30",
+    "type": "Mocktail",
+    "veg_type": "Veg"
+  },
+  {
+    "dish_name": "Masala Soft Drink",
+    "price": "49",
+    "type": "Mocktail",
+    "veg_type": "Veg"
+  },
+  {
+    "dish_name": "Cold Coffee",
+    "price": "139",
+    "type": "Milkshake",
+    "veg_type": "Veg"
+  },
+  {
+    "dish_name": "Chocolate Shake",
+    "price": "149",
+    "type": "Milkshake",
+    "veg_type": "Veg"
+  },
+  {
+    "dish_name": "Straberry Shake",
+    "price": "139",
+    "type": "Milkshake",
+    "veg_type": "Veg"
+  },
+  {
+    "dish_name": "Vanilla",
+    "price": "129",
+    "type": "Milkshake",
+    "veg_type": "Veg"
+  },
+  {
+    "dish_name": "Butterscotch Shake",
+    "price": "149",
+    "type": "Milkshake",
+    "veg_type": "Veg"
+  },
+  {
+    "dish_name": "Black Current Shake",
+    "price": "149",
+    "type": "Milkshake",
+    "veg_type": "Veg"
+  },
+  {
+    "dish_name": "Oreo Crumble",
+    "price": "149",
+    "type": "Milkshake",
+    "veg_type": "Veg"
+  },
+  {
+    "dish_name": "Choco Brownie",
+    "price": "149",
+    "type": "Milkshake",
+    "veg_type": "Veg"
+  },
+  {
+    "dish_name": "Kitkat",
+    "price": "159",
+    "type": "Milkshake",
+    "veg_type": "Veg"
+  },
+  {
+    "dish_name": "Marshmellow",
+    "price": "149",
+    "type": "Milkshake",
+    "veg_type": "Veg"
+  },
+  {
+    "dish_name": "Kaju Overload",
+    "price": "169",
+    "type": "Milkshake",
+    "veg_type": "Veg"
+  },
+  {
+    "dish_name": "Cheese Garlic Bread",
+    "price": "229",
+    "type": "Garlic Bread",
+    "veg_type": "Veg"
+  },
+  {
+    "dish_name": "Chicken Cheese garlic bread",
+    "price": "249",
+    "type": "Garlic Bread",
+    "veg_type": "Non-Veg"
+  },
+  {
+    "dish_name": "Mix thick raita",
+    "price": "60",
+    "type": "Add-on",
+    "veg_type": "Veg"
+  },
+  {
+    "dish_name": "Cheese",
+    "price": "30",
+    "type": "Add-on",
+    "veg_type": "Veg"
+  },
+  {
+    "dish_name": "Pizza cheese",
+    "price": "60",
+    "type": "Add-on",
+    "veg_type": "Veg"
+  },
+  {
+    "dish_name": "Seawan sauce",
+    "price": "20",
+    "type": "Add-on",
+    "veg_type": "Veg"
+  },
+  {
+    "dish_name": "Egg",
+    "price": "25",
+    "type": "Add-on",
+    "veg_type": "Non-Veg"
+  },
+  {
+    "dish_name": "Vanila Icecream",
+    "price": "30",
+    "type": "Add-on",
+    "veg_type": "Veg"
+  },
+  {
+    "dish_name": "Choclate Icecream",
+    "price": "40",
+    "type": "Add-on",
+    "veg_type": "Veg"
+  },
+  {
+    "dish_name": "peri peri",
+    "price": "20",
+    "type": "Add-on",
+    "veg_type": "Veg"
+  },
+  {
+    "dish_name": "mayo",
+    "price": "30",
+    "type": "Add-on",
+    "veg_type": "Veg"
+  },
+  {
+    "dish_name": "mint",
+    "price": "30",
+    "type": "Add-on",
+    "veg_type": "Veg"
+  },
+  {
+    "dish_name": "mint mayo",
+    "price": "30",
+    "type": "Add-on",
+    "veg_type": "Veg"
+  },
+  {
+    "dish_name": "musturd sauce",
+    "price": "30",
+    "type": "Add-on",
+    "veg_type": "Veg"
+  }
+]
