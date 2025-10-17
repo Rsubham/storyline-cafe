@@ -1,48 +1,45 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const pdfFiles = [
-    "/Assets/Menu/Outlet/Menu_Gp.pdf", // Gopalpur On Sea
-    "/Assets/Menu/Outlet/Menu_Bp.pdf"  // Berhampur
-  ];
+  const menus = {
+    gopalpur: "/Assets/Menu/Outlet/Menu_Gp.pdf",
+    berhampur: "/Assets/Menu/Outlet/Menu_Bp.pdf",
+  };
 
   const outlets = document.querySelectorAll(".outlet");
-  const modal = document.getElementById("pdfModal");
-  const viewer = document.getElementById("pdfViewer");
-  const closeBtn = document.getElementById("closePdf");
 
-  outlets.forEach((outlet, index) => {
-    const viewBtn = outlet.querySelectorAll(".btn")[0];
-    const downloadBtn = outlet.querySelectorAll(".btn")[1];
-    const pdfSrc = pdfFiles[index];
+  outlets.forEach((outlet) => {
+    const outletName = outlet.querySelector("h2").textContent.trim().toLowerCase();
+    const buttons = outlet.querySelectorAll(".btn");
 
-    viewBtn.addEventListener("click", () => {
-      viewer.src = pdfSrc;
-      modal.style.display = "flex";
+    let pdfPath = "";
+    if (outletName.includes("gopalpur")) pdfPath = menus.gopalpur;
+    else if (outletName.includes("berhampur")) pdfPath = menus.berhampur;
+
+    buttons[0].addEventListener("click", () => {
+      window.open(pdfPath, "_blank");
     });
 
-    downloadBtn.addEventListener("click", () => {
-      const link = document.createElement("a");
-      link.href = pdfSrc;
-      link.download = pdfSrc.split("/").pop();
-      link.click();
+    buttons[1].addEventListener("click", async () => {
+      try {
+        const response = await fetch(pdfPath);
+        if (!response.ok) throw new Error("Network response was not ok");
+
+        const blob = await response.blob();
+        const blobUrl = URL.createObjectURL(blob);
+
+        const link = document.createElement("a");
+        link.href = blobUrl;
+        link.download = pdfPath.split("/").pop();
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+
+        URL.revokeObjectURL(blobUrl);
+      } catch (err) {
+        console.error("Download failed:", err);
+        window.open(pdfPath, "_blank");
+      }
     });
   });
-
-  closeBtn.addEventListener("click", closeModal);
-
-  modal.addEventListener("click", (e) => {
-    if (!e.target.closest(".pdf_content")) {
-      closeModal();
-    }
-  });
-
-  document.addEventListener("keydown", (e) => {
-    if (e.key === "Escape") closeModal();
-  });
-
-  function closeModal() {
-    modal.style.display = "none";
-    viewer.src = "";
-  }
 });
 
 // animations
